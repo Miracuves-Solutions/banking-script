@@ -1,314 +1,119 @@
-# Banking Script — White-Label Digital Banking by Miracuves
+# Banking Script Clone — White-Label Digital Banking & Finance Platform by Miracuves
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxbank.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/banking-script/)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/banking-script/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/banking-script/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXBank** is a production-ready, white-label Banking Script clone: a complete neobank with multi-currency accounts, cards, KYC/AML, and admin console — delivered with **100% source code ownership** in **6 working days**.
+
+> 🏦 **See it running before you talk to anyone.** Live user app, admin console, and compliance dashboard — demo credentials are printed on the [solution page](https://miracuves.com/banking-script#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxbank.mimeld.com](https://mxbank.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/banking-script/#demo) | Users, content, plans, analytics |
+| 📱 User App | [mas.mimeld.com](https://mas.mimeld.com) | Accounts, transfers, cards, payments, statements |
+| 🌐 Web Banking | [mxbank.mimeld.com](https://mxbank.mimeld.com) | Full banking experience in the browser |
+| 🛡️ Compliance Console | [Solution page → Demo](https://miracuves.com/banking-script#demo) | KYC/AML, transaction monitoring, reports |
+| 🛠️ Admin Dashboard | [Solution page → Demo](https://miracuves.com/banking-script#demo) | Users, accounts, fees, reports, cards |
 
-Demo credentials: [miracuves.com/banking-script -> Demo section](https://miracuves.com/banking-script/#demo)
-
-## What Makes This Banking Script Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Startup founders | Launch platform |
-| Agencies | White-label solution |
-| Enterprises | Custom deployment |
+Demo credentials for all environments: **[miracuves.com/banking-script → Demo section](https://miracuves.com/banking-script/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Banking Script Clone Different
 
-1. User opens app
-2. Browses available services
-3. Selects and customizes
-4. Books/orders
-5. Payment processed
-6. Service delivered
-7. Review & rating
+Most banking scripts stop at "send + receive." This platform ships with the features that actually run a licensed fintech *business*:
 
----
+- **KYC/AML Built In** — passport + selfie + liveness verification with sanctions screening and ongoing transaction monitoring — same stack neobanks use to get licensed
+- **Multi-Currency Core** — 40+ currencies with real exchange rates, multi-currency cards, and FX-hedged wallets — Revolut's core playbook
+- **Issuing-as-a-Service Ready** — 
+- **Open Banking & PSD2** — double-entry ledger built for fintech with reconciliation, holds, reversals, and audit — what Stripe & Plaid run on
+- **Programmable Ledger** — PSD2/Open Banking aggregators pre-integrated — accounts aggregation, instant payments, SCA flows ready
 
-## Core Features
+## 📦 Core Features
 
-### User
-- Accounts
-- Transfers
-- Cards
-- Payments
-- Statements
+**User:** multi-currency accounts · domestic & international transfers · debit/credit cards · bill payments · savings goals · statements · biometric login · fraud alerts
 
-### Admin
-- KYC/AML
-- Users
-- Transactions
-- Compliance
-- Fees
+**Compliance:** KYC/AML onboarding · sanctions screening · transaction monitoring · SAR/CTF reporting · audit trail · jurisdiction-aware controls
 
----
+**Admin:** user management · account lifecycle · fee schedule · card issuance · dispute resolution · analytics reports
 
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Engine** - Smart automation
-- **AI Recommendations** - Personalized suggestions
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| User App | Bank,transfer |
-| Admin Panel | Manage,comply |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[User App<br/>Flutter]
+    B[Web Banking<br/>Responsive]
+    W[Compliance Console]
+    AD[Admin Dashboard]
+    A --> G[REST API<br/>Java/Node]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(PostgreSQL<br/>Double-Entry Ledger)]
+    G --> KYC[KYC Provider<br/>Jumio/Onfido]
+    KYC --> A
+    G --> CARD[Card Issuer<br/>Stripe/Marqeta]
+    G --> BANK[Banking Rails<br/>SWIFT/ACH/SEPA]
 ```
 
-**Stack:**
+**Stack:** Java Spring Boot or Node.js backend · Flutter mobile apps (Android + iOS) · PostgreSQL with double-entry ledger · Redis for caching · Stripe / Marqeta for card issuing · SWIFT, ACH, SEPA, UPI, IMPS, card networks
 
-| Layer | Technology |
-|---|---|
-| Mobile | Flutter |
-| Backend | Node.js |
-| Database | MongoDB |
-| Payments | Stripe |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$4,499**, transparent on the [solution page](https://miracuves.com/banking-script/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- Transaction fees
-- Subscription plans
-- Commission per booking
-- Featured listings
-- Premium features
+Custom neobanks run $300k–$2M and 9–24 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for licensing, compliance, and marketing.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Banking Script Clone — Full Solution Page](https://miracuves.com/banking-script) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a Neobank Cost in 2026?](https://miracuves.com/banking-script#pricing) pricing breakdown & what's included
+- 📝 [Best Banking Script Clone Script in 2026](https://miracuves.com/banking-script/blog/) features, pricing & launch guide
+- 🧠 [KYC/AML Stack for Licensed Fintechs](https://miracuves.com/banking-script/blog/) providers, flows, ongoing monitoring
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/banking-script/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
 
----
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
 
-## What's Included
-
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$$4,499** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
-
-**What is included:**
-
-- User App
-- Admin Panel
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
-
----
-**Pricing:** from **$3,699** — transparent on the [solution page](https://miracuves.com/banking-script/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## Why Not Build From Scratch?
+### ⚠️ Note on This Repository
 
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $$4,499 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/banking-script/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+
+*Keywords: banking script clone, banking script clone script, digital banking, neobank, fintech platform, white label banking, KYC AML, Flutter banking app, Node.js fintech*
 
 ---
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Large Market | Growing |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- Digital banking
-- Payments
-- Remittance
-- Business banking
-- Personal finance
-
----
-
-## Client Testimonials
-
-> *"Launched in 6 days. Exceptional quality."*
-> - Founder
-
-> *"Source code ownership gave us full control."*
-> - CEO
-
----
-
-## FAQ
-
-**How much?**
-See pricing.
-
-**Source code?**
-Yes.
-
-**Launch?**
-6 days.
-
-**Rebrand?**
-Yes.
-
-**Support?**
-60 days.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Neobank Clone](https://github.com/Miracuves-Solutions/neobank-clone)
-- [Revolut Clone](https://github.com/Miracuves-Solutions/revolut-clone)
-- [Banking Solution](https://github.com/Miracuves-Solutions/banking-solution)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/banking-script/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your digital banking software?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/banking-script](https://miracuves.com/banking-script/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: banking script, banking script script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Banking Script Clone
+{MX_NAME}         MXBank
+{CATEGORY}        Digital Banking & Finance Platform
+{DEMO_WEB}        mxbank.mimeld.com
+{PRICE}           $4,499
+{SLUG}            banking-script
+{SOLUTION_URL}    https://miracuves.com/banking-script/
+{VERTICAL}        banking
+
+See /tmp/verticals/banking.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
