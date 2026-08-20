@@ -1,11 +1,11 @@
 # Banking Script Clone — White-Label Digital Banking & Finance Platform by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxbank.mimeld.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxdemo.mimeld.com)
 [![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/banking-script/)
-[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/banking-script/#pricing)
-[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
+[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/banking-script/#features)
+[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/banking-script/#features)
 
-**MXBank** is a production-ready, white-label Banking Script clone: a complete neobank with multi-currency accounts, cards, KYC/AML, and admin console — delivered with **100% source code ownership** in **6 working days**.
+**MXDemo** is a production-ready, white-label Banking Script clone: a complete neobank with multi-currency accounts, cards, KYC/AML, and admin console — delivered with **100% source code ownership** in **6 working days**.
 
 > 🏦 **See it running before you talk to anyone.** Live user app, admin console, and compliance dashboard — demo credentials are printed on the [solution page](https://miracuves.com/banking-script#demo). No sales call required.
 
@@ -16,7 +16,7 @@
 | Environment | URL | What you can test |
 |---|---|---|
 | 📱 User App | [mas.mimeld.com](https://mas.mimeld.com) | Accounts, transfers, cards, payments, statements |
-| 🌐 Web Banking | [mxbank.mimeld.com](https://mxbank.mimeld.com) | Full banking experience in the browser |
+| 🌐 Web Banking | [mxdemo.mimeld.com](https://mxdemo.mimeld.com) | Full banking experience in the browser |
 | 🛡️ Compliance Console | [Solution page → Demo](https://miracuves.com/banking-script#demo) | KYC/AML, transaction monitoring, reports |
 | 🛠️ Admin Dashboard | [Solution page → Demo](https://miracuves.com/banking-script#demo) | Users, accounts, fees, reports, cards |
 
@@ -71,7 +71,7 @@ flowchart LR
 - ✅ 60 days post-launch support + 12 months of free updates
 - ✅ Documentation & handover
 
-**Pricing:** from **$3,699**, transparent on the [solution page](https://miracuves.com/banking-script/#pricing) — no "contact us for quote" games.
+**Pricing:** from **$3,699**, transparent on the [solution page](https://miracuves.com/banking-script/#features) — no "contact us for quote" games.
 
 ## 🆚 Why Not Build From Scratch?
 
@@ -80,10 +80,12 @@ Custom neobanks run $300k–$2M and 9–24 months. A proven white-label base get
 ## 📚 Resources
 
 - 📖 [Banking Script Clone — Full Solution Page](https://miracuves.com/banking-script) (features, pricing, demos, FAQ)
-- 💰 [How Much Does a Neobank Cost in 2026?](https://miracuves.com/banking-script#pricing) pricing breakdown & what's included
-- 📝 [Best Banking Script Clone Script in 2026](https://miracuves.com/banking-script/blog/) features, pricing & launch guide
-- 🧠 [KYC/AML Stack for Licensed Fintechs](https://miracuves.com/banking-script/blog/) providers, flows, ongoing monitoring
-- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/banking-script/facts/) every claim we make, verified
+- 💰 [How Much Does a Neobank Cost in 2026?](https://miracuves.com/banking-script#features) pricing breakdown & what's included
+- 📝 [Best Banking Script Clone Script in 2026](https://miracuves.com/banking-script#features) features, pricing & launch guide
+- 🧠 [KYC/AML Stack for Licensed Fintechs](https://miracuves.com/banking-script#features) providers, flows, ongoing monitoring
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/banking-script#faq) every claim we make, verified
+- 💻 [Banking Script Clone — Technical Stack](https://miracuves.com/banking-script#techstack) languages, databases, infra, payments, hosting
+- 🔄 [Banking Script Clone — How It Works / User Flow](https://miracuves.com/banking-script#flow) step-by-step product walkthrough
 
 ## 🏢 About Miracuves
 
@@ -95,7 +97,7 @@ Custom neobanks run $300k–$2M and 9–24 months. A proven white-label base get
 
 ### ⚠️ Note on This Repository
 
-This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/banking-script/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/banking-script/#features). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
 *Keywords: banking script clone, banking script clone script, digital banking, neobank, fintech platform, white label banking, KYC AML, Flutter banking app, Node.js fintech*
 
@@ -106,9 +108,9 @@ This repository is a product overview. The full source code is delivered to clie
 TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
 ══════════════════════════════════════════════════
 {APP_NAME}        Banking Script Clone
-{MX_NAME}         MXBank
+{MX_NAME}         MXDemo
 {CATEGORY}        Digital Banking & Finance Platform
-{DEMO_WEB}        mxbank.mimeld.com
+{DEMO_WEB}        mxdemo.mimeld.com
 {PRICE}           $3,699
 {SLUG}            banking-script
 {SOLUTION_URL}    https://miracuves.com/banking-script/
